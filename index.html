@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/test.css">
+    <title>javascript</title>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="game-info">
+            <div class="game-name">Hangman</div>
+            <div class="try">Number of attemps: <span>8</span></div>
+            <div class="category">
+                word from : <span></span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="hangman-draw">
+                <div class="the-draw">
+                    <div class="the-stand"></div>
+                    <div class="the-hang"></div>
+                    <div class="the-rope"></div>
+                    <div class="the-man">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="hands"></div>
+                        <div class="legs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters"></div>
+        </div>
+        <hr>
+        <div class="leteters-guess"></div>
+    </div>
+    <audio id="win" src="/image/yt1s.com - مدحت شلبى  برافو عليك.mp3" preload="auto"></audio>
+    <audio id="lose" src="/image/yt1s.com - ده مفيش في قاموسي ضعف ولا هزيمه يامعافر كمل للاخر .mp3" preload="auto"></audio>
+    <audio id="over" src="/image/yt1s.com - احتفال المزاريطة بالفوز على امريكاflv.mp3" preload="auto"></audio>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
