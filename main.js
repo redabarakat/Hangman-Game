@@ -1,29 +1,3 @@
-// hoisting => default beahviour in java of moving declartions to the top od script  variables => var *** declartions functions
-
-// document.addEventListener("contextmenu",function(e){
-//     e.preventDefault()
-// })
-
-/*----------------------------------------------------------------------------------------------*/
-// const nums = new Set();
-// while (nums.size !== 20) {
-//   nums.add(Math.floor(Math.random() * 20) + 1);
-// }
-// console.log(Array.from(nums));
-
-// sweet alart  // title , text , icons 
-// swal({
-//     title:"reda barak",
-//     text:"front end developer",
-//     icon:"success",
-//     buttons:["Yes","NO"],
-//     // timer:2000,
-//     className:"sw"
-// // })
-// swal.fire({
-//     title:"reda barakat",
-//     text:"front end developer",
-// })
 /********************************************************************* */
 let letters = "abcdefghijklmnopqrstuvwxyz";
 let lettersArray = Array.from(letters)
@@ -79,6 +53,13 @@ document.addEventListener("click",function(e){
                 spanArray[index].classList.add("choise")
                 let choiseArry = Array.from(spanArray).filter(function(span){
                     return span.classList.contains("choise")
+                })
+                let arrayValuechoise = arrayValue.filter((word) => {
+                    if(word === " "){
+                        return false
+                    } else {
+                        return word
+                    }
                 })
                 if(arrayValue.length === choiseArry.length){
                     success()
